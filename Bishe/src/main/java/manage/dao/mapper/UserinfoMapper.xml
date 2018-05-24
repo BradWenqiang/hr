@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="manage.dao.UserinfoMapper" >
+  <resultMap id="BaseResultMap" type="manage.model.Userinfo" >
+    <id column="usernumber" property="usernumber" jdbcType="VARCHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="age" property="age" jdbcType="VARCHAR" />
+    <result column="sex" property="sex" jdbcType="VARCHAR" />
+    <result column="card" property="card" jdbcType="VARCHAR" />
+    <result column="birthday" property="birthday" jdbcType="DATE" />
+    <result column="nation" property="nation" jdbcType="VARCHAR" />
+    <result column="wedding" property="wedding" jdbcType="VARCHAR" />
+    <result column="phonenumber" property="phonenumber" jdbcType="VARCHAR" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
+    <result column="school" property="school" jdbcType="VARCHAR" />
+    <result column="education" property="education" jdbcType="VARCHAR" />
+    <result column="worktime" property="worktime" jdbcType="DATE" />
+    <result column="depnumber" property="depnumber" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    usernumber, name, age, sex, card, birthday, nation, wedding, phonenumber, address, 
+    school, education, worktime, depnumber
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from userinfo
+    where usernumber = #{usernumber,jdbcType=VARCHAR}
+  </select>
+   <select id="selectAllListPage" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from userinfo 
+     order by usernumber 
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from userinfo
+    where usernumber = #{usernumber,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="manage.model.Userinfo" >
+    insert into userinfo (usernumber, name, age, 
+      sex, card, birthday, nation, 
+      wedding, phonenumber, address, 
+      school, education, worktime, 
+      depnumber)
+    values (#{usernumber,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{age,jdbcType=VARCHAR}, 
+      #{sex,jdbcType=VARCHAR}, #{card,jdbcType=VARCHAR}, #{birthday,jdbcType=DATE}, #{nation,jdbcType=VARCHAR}, 
+      #{wedding,jdbcType=VARCHAR}, #{phonenumber,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, 
+      #{school,jdbcType=VARCHAR}, #{education,jdbcType=VARCHAR}, #{worktime,jdbcType=DATE}, 
+      #{depnumber,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="manage.model.Userinfo" >
+    insert into userinfo
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="usernumber != null" >
+        usernumber,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="age != null" >
+        age,
+      </if>
+      <if test="sex != null" >
+        sex,
+      </if>
+      <if test="card != null" >
+        card,
+      </if>
+      <if test="birthday != null" >
+        birthday,
+      </if>
+      <if test="nation != null" >
+        nation,
+      </if>
+      <if test="wedding != null" >
+        wedding,
+      </if>
+      <if test="phonenumber != null" >
+        phonenumber,
+      </if>
+      <if test="address != null" >
+        address,
+      </if>
+      <if test="school != null" >
+        school,
+      </if>
+      <if test="education != null" >
+        education,
+      </if>
+      <if test="worktime != null" >
+        worktime,
+      </if>
+      <if test="depnumber != null" >
+        depnumber,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="usernumber != null" >
+        #{usernumber,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null" >
+        #{age,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="card != null" >
+        #{card,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null" >
+        #{birthday,jdbcType=DATE},
+      </if>
+      <if test="nation != null" >
+        #{nation,jdbcType=VARCHAR},
+      </if>
+      <if test="wedding != null" >
+        #{wedding,jdbcType=VARCHAR},
+      </if>
+      <if test="phonenumber != null" >
+        #{phonenumber,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null" >
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="school != null" >
+        #{school,jdbcType=VARCHAR},
+      </if>
+      <if test="education != null" >
+        #{education,jdbcType=VARCHAR},
+      </if>
+      <if test="worktime != null" >
+        #{worktime,jdbcType=DATE},
+      </if>
+      <if test="depnumber != null" >
+        #{depnumber,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="manage.model.Userinfo" >
+    update userinfo
+    <set >
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null" >
+        age = #{age,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        sex = #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="card != null" >
+        card = #{card,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null" >
+        birthday = #{birthday,jdbcType=DATE},
+      </if>
+      <if test="nation != null" >
+        nation = #{nation,jdbcType=VARCHAR},
+      </if>
+      <if test="wedding != null" >
+        wedding = #{wedding,jdbcType=VARCHAR},
+      </if>
+      <if test="phonenumber != null" >
+        phonenumber = #{phonenumber,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null" >
+        address = #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="school != null" >
+        school = #{school,jdbcType=VARCHAR},
+      </if>
+      <if test="education != null" >
+        education = #{education,jdbcType=VARCHAR},
+      </if>
+      <if test="worktime != null" >
+        worktime = #{worktime,jdbcType=DATE},
+      </if>
+      <if test="depnumber != null" >
+        depnumber = #{depnumber,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where usernumber = #{usernumber,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="manage.model.Userinfo" >
+    update userinfo
+    set name = #{name,jdbcType=VARCHAR},
+      age = #{age,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=VARCHAR},
+      card = #{card,jdbcType=VARCHAR},
+      birthday = #{birthday,jdbcType=DATE},
+      nation = #{nation,jdbcType=VARCHAR},
+      wedding = #{wedding,jdbcType=VARCHAR},
+      phonenumber = #{phonenumber,jdbcType=VARCHAR},
+      address = #{address,jdbcType=VARCHAR},
+      school = #{school,jdbcType=VARCHAR},
+      education = #{education,jdbcType=VARCHAR},
+      worktime = #{worktime,jdbcType=DATE},
+      depnumber = #{depnumber,jdbcType=VARCHAR}
+    where usernumber = #{usernumber,jdbcType=VARCHAR}
+  </update>
+</mapper>

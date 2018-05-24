@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="manage.dao.EmployeeMapper" >
+  <resultMap id="BaseResultMap" type="manage.model.Employee" >
+    <id column="eid" property="eid" jdbcType="VARCHAR" />
+    <result column="ename" property="ename" jdbcType="VARCHAR" />
+    <result column="eage" property="eage" jdbcType="VARCHAR" />
+    <result column="education" property="education" jdbcType="VARCHAR" />
+    <result column="job" property="job" jdbcType="VARCHAR" />
+    <result column="sendtime" property="sendtime" jdbcType="DATE" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    eid, ename, eage, education, job, sendtime
+  </sql>
+  <select id="selectAllListPage" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from employee 
+    order by eid 
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from employee
+    where eid = #{eid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from employee
+    where eid = #{eid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="manage.model.Employee" >
+    insert into employee (eid, ename, eage, 
+      education, job, sendtime
+      )
+    values (#{eid,jdbcType=VARCHAR}, #{ename,jdbcType=VARCHAR}, #{eage,jdbcType=VARCHAR}, 
+      #{education,jdbcType=VARCHAR}, #{job,jdbcType=VARCHAR}, #{sendtime,jdbcType=DATE}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="manage.model.Employee" >
+    insert into employee
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="eid != null" >
+        eid,
+      </if>
+      <if test="ename != null" >
+        ename,
+      </if>
+      <if test="eage != null" >
+        eage,
+      </if>
+      <if test="education != null" >
+        education,
+      </if>
+      <if test="job != null" >
+        job,
+      </if>
+      <if test="sendtime != null" >
+        sendtime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="eid != null" >
+        #{eid,jdbcType=VARCHAR},
+      </if>
+      <if test="ename != null" >
+        #{ename,jdbcType=VARCHAR},
+      </if>
+      <if test="eage != null" >
+        #{eage,jdbcType=VARCHAR},
+      </if>
+      <if test="education != null" >
+        #{education,jdbcType=VARCHAR},
+      </if>
+      <if test="job != null" >
+        #{job,jdbcType=VARCHAR},
+      </if>
+      <if test="sendtime != null" >
+        #{sendtime,jdbcType=DATE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="manage.model.Employee" >
+    update employee
+    <set >
+      <if test="ename != null" >
+        ename = #{ename,jdbcType=VARCHAR},
+      </if>
+      <if test="eage != null" >
+        eage = #{eage,jdbcType=VARCHAR},
+      </if>
+      <if test="education != null" >
+        education = #{education,jdbcType=VARCHAR},
+      </if>
+      <if test="job != null" >
+        job = #{job,jdbcType=VARCHAR},
+      </if>
+      <if test="sendtime != null" >
+        sendtime = #{sendtime,jdbcType=DATE},
+      </if>
+    </set>
+    where eid = #{eid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="manage.model.Employee" >
+    update employee
+    set ename = #{ename,jdbcType=VARCHAR},
+      eage = #{eage,jdbcType=VARCHAR},
+      education = #{education,jdbcType=VARCHAR},
+      job = #{job,jdbcType=VARCHAR},
+      sendtime = #{sendtime,jdbcType=DATE}
+    where eid = #{eid,jdbcType=VARCHAR}
+  </update>
+</mapper>

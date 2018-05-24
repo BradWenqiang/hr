@@ -1,0 +1,70 @@
+@CHARSET "UTF-8";
+/* 超小设备（手机，小于 768px） */
+/* Bootstrap 中默认情况下没有媒体查询 */
+@media (min-width: 1px) { 
+.tablefont{
+	font-size: 15px ;
+}
+.hid{
+ 	DISPLAY: none;
+ }
+ }
+/* 小型设备（平板电脑，768px 起） */
+@media (min-width: 768px) { 
+.hid{
+ 	DISPLAY: true;
+ }
+ .midfont{
+	font-size:22px; 
+ }
+
+ }
+
+
+
+/* 大型设备（大台式电脑，1200px 起） */
+@media (min-width: 1200px) { 
+	
+.midfont{
+	font-size:15px; 
+ }
+.tablefont{
+	font-size: 20px ;
+}
+.hid{
+ 	DISPLAY: block;
+ }
+ }
+ 
+ .a {
+ 	
+ 	border: 1px solid #ccc ;
+ 	background: #eee;
+ }
+ .full{
+ 	width: 100%;
+ 	height: 100%;
+ 	background: #eee;
+ }
+ .img{
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+ .leftlist{
+ 	border: 0px;
+ }
+ .choose{
+ 	border-bottom: 0px;
+ 		
+ }
+ .alertclose{
+ 	margin-bottom: 0px;
+ }
+ .inputselect{
+ 	margin-left: 50px;
+ 	margin-bottom:0px;
+ 	margin-top: 25px;
+ }
+
+
+ 

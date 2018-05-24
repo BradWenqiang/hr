@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+   xmlns:mvc="http://www.springframework.org/schema/mvc"
+
+   xmlns:context="http://www.springframework.org/schema/context"
+
+   xmlns:p="http://www.springframework.org/schema/p"
+
+   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+
+   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+
+   http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+
+   ">
+
+        
+
+   <mvc:annotation-driven conversion-service="conversionService" />  
+
+    <context:component-scan base-package="manage">
+
+      <context:include-filter type="annotation"
+
+         expression="org.springframework.stereotype.Controller" />
+
+      <context:exclude-filter type="annotation"
+
+         expression="org.springframework.stereotype.Service" />
+
+   </context:component-scan>
+   
+    <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">    
+        <property name="converters">    
+            <list>    
+                <bean class="manage.util.DateConverter" />    
+            </list>    
+        </property>    
+	</bean> 
+   
+   <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />  
+         <property name="prefix">
+            <value>/WEB-ROOT/</value>
+        </property>
+        <property name="suffix">
+            <value>.jsp</value>
+        </property>
+    </bean>  
+    
+    <mvc:resources location="/" mapping="/**/*.html"/>  
+	<mvc:resources location="/" mapping="/**/*.js"/>  
+	<mvc:resources location="/" mapping="/**/*.css"/>  
+	<mvc:resources location="/" mapping="/**/*.png"/>  
+	<mvc:resources location="/" mapping="/**/*.jpg"/>  
+	<mvc:resources location="/" mapping="/**/*.gif"/>  
+	<mvc:resources location="/" mapping="/**/*.jsp"/> 
+	<mvc:resources location="/" mapping="/**/*.eot"/>
+	<mvc:resources location="/" mapping="/**/*.svg"/>
+	<mvc:resources location="/" mapping="/**/*.ttf"/>
+	<mvc:resources location="/" mapping="/**/*.woff"/>
+	<mvc:resources location="/" mapping="/**/*.map"/>
+	<!-- SpringMVC上传文件时，需要配置MultipartResolver处理器 -->
+        <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+            <property name="defaultEncoding" value="UTF-8"/>  
+            <!-- 指定所上传文件的总大小不能超过500KB。注意maxUploadSize属性的限制不是针对单个文件，而是所有文件的容量之和。
+                                     这个的大小是以字节为单位的，要多大自己算好了再设置-->
+            <property name="maxUploadSize" value="500000"/>
+            <!-- 最大内存大小 (10240)-->
+            <property name="maxInMemorySize" value="40960" />
+        </bean>
+
+</beans>

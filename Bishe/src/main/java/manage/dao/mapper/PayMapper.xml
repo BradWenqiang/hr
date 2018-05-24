@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="manage.dao.PayMapper" >
+  <resultMap id="BaseResultMap" type="manage.model.Pay" >
+    <id column="account" property="account" jdbcType="VARCHAR" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
+    <result column="paytime" property="paytime" jdbcType="DATE" />
+    <result column="basewage" property="basewage" jdbcType="VARCHAR" />
+    <result column="paywage" property="paywage" jdbcType="VARCHAR" />
+    <result column="booleanpay" property="booleanpay" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    account, username, paytime, basewage, paywage, booleanpay
+  </sql>
+     <select id="selectAllListPage" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from pay
+    order by account 
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from pay
+    where account = #{account,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from pay
+    where account = #{account,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="manage.model.Pay" >
+    insert into pay (account, username, paytime, 
+      basewage, paywage, booleanpay
+      )
+    values (#{account,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{paytime,jdbcType=DATE}, 
+      #{basewage,jdbcType=VARCHAR}, #{paywage,jdbcType=VARCHAR}, #{booleanpay,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="manage.model.Pay" >
+    insert into pay
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="account != null" >
+        account,
+      </if>
+      <if test="username != null" >
+        username,
+      </if>
+      <if test="paytime != null" >
+        paytime,
+      </if>
+      <if test="basewage != null" >
+        basewage,
+      </if>
+      <if test="paywage != null" >
+        paywage,
+      </if>
+      <if test="booleanpay != null" >
+        booleanpay,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="account != null" >
+        #{account,jdbcType=VARCHAR},
+      </if>
+      <if test="username != null" >
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="paytime != null" >
+        #{paytime,jdbcType=DATE},
+      </if>
+      <if test="basewage != null" >
+        #{basewage,jdbcType=VARCHAR},
+      </if>
+      <if test="paywage != null" >
+        #{paywage,jdbcType=VARCHAR},
+      </if>
+      <if test="booleanpay != null" >
+        #{booleanpay,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="manage.model.Pay" >
+    update pay
+    <set >
+      <if test="username != null" >
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="paytime != null" >
+        paytime = #{paytime,jdbcType=DATE},
+      </if>
+      <if test="basewage != null" >
+        basewage = #{basewage,jdbcType=VARCHAR},
+      </if>
+      <if test="paywage != null" >
+        paywage = #{paywage,jdbcType=VARCHAR},
+      </if>
+      <if test="booleanpay != null" >
+        booleanpay = #{booleanpay,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where account = #{account,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="manage.model.Pay" >
+    update pay
+    set username = #{username,jdbcType=VARCHAR},
+      paytime = #{paytime,jdbcType=DATE},
+      basewage = #{basewage,jdbcType=VARCHAR},
+      paywage = #{paywage,jdbcType=VARCHAR},
+      booleanpay = #{booleanpay,jdbcType=VARCHAR}
+    where account = #{account,jdbcType=VARCHAR}
+  </update>
+</mapper>

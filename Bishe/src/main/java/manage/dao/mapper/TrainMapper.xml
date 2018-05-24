@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="manage.dao.TrainMapper" >
+  <resultMap id="BaseResultMap" type="manage.model.Train" >
+    <id column="tid" property="tid" jdbcType="VARCHAR" />
+    <result column="ttitle" property="ttitle" jdbcType="VARCHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="purpose" property="purpose" jdbcType="VARCHAR" />
+    <result column="time" property="time" jdbcType="DATE" />
+    <result column="address" property="address" jdbcType="VARCHAR" />
+    <result column="participants" property="participants" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    tid, ttitle, name, purpose, time, address, participants
+  </sql>
+  <select id="selectAllListPage" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from train
+    order by tid 
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from train
+    where tid = #{tid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from train
+    where tid = #{tid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="manage.model.Train" >
+    insert into train (tid, ttitle, name, 
+      purpose, time, address, 
+      participants)
+    values (#{tid,jdbcType=VARCHAR}, #{ttitle,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
+      #{purpose,jdbcType=VARCHAR}, #{time,jdbcType=DATE}, #{address,jdbcType=VARCHAR}, 
+      #{participants,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="manage.model.Train" >
+    insert into train
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="tid != null" >
+        tid,
+      </if>
+      <if test="ttitle != null" >
+        ttitle,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="purpose != null" >
+        purpose,
+      </if>
+      <if test="time != null" >
+        time,
+      </if>
+      <if test="address != null" >
+        address,
+      </if>
+      <if test="participants != null" >
+        participants,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="tid != null" >
+        #{tid,jdbcType=VARCHAR},
+      </if>
+      <if test="ttitle != null" >
+        #{ttitle,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="purpose != null" >
+        #{purpose,jdbcType=VARCHAR},
+      </if>
+      <if test="time != null" >
+        #{time,jdbcType=DATE},
+      </if>
+      <if test="address != null" >
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="participants != null" >
+        #{participants,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="manage.model.Train" >
+    update train
+    <set >
+      <if test="ttitle != null" >
+        ttitle = #{ttitle,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="purpose != null" >
+        purpose = #{purpose,jdbcType=VARCHAR},
+      </if>
+      <if test="time != null" >
+        time = #{time,jdbcType=DATE},
+      </if>
+      <if test="address != null" >
+        address = #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="participants != null" >
+        participants = #{participants,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where tid = #{tid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="manage.model.Train" >
+    update train
+    set ttitle = #{ttitle,jdbcType=VARCHAR},
+      name = #{name,jdbcType=VARCHAR},
+      purpose = #{purpose,jdbcType=VARCHAR},
+      time = #{time,jdbcType=DATE},
+      address = #{address,jdbcType=VARCHAR},
+      participants = #{participants,jdbcType=VARCHAR}
+    where tid = #{tid,jdbcType=VARCHAR}
+  </update>
+</mapper>

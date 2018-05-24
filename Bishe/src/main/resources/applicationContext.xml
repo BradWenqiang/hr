@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans
+   xmlns="http://www.springframework.org/schema/beans"
+
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+   xmlns:tx="http://www.springframework.org/schema/tx"
+
+   xmlns:aop="http://www.springframework.org/schema/aop"
+
+   xmlns:context="http://www.springframework.org/schema/context"
+
+   xmlns:p="http://www.springframework.org/schema/p"
+
+   xsi:schemaLocation="http://www.springframework.org/schema/beans
+
+   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+
+   http://www.springframework.org/schema/context
+
+   http://www.springframework.org/schema/context/spring-context-4.0.xsd
+
+   http://www.springframework.org/schema/tx
+
+   http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+
+   http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+
+ 
+
+  
+	
+	
+
+   <!-- 配置数据源，记得去掉myBatis-config.xml的数据源相关配置 -->
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"> 
+        <property name="location" value="classpath:jdbc.properties"></property>
+	</bean>
+   <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"  destroy-method="close">        
+
+      <property name="driverClassName" value="${driverClassName}" />
+      <property name="url" value="${url}" />
+      <property name="username" value="${username}" />
+      <property name="password" value="${password}" />    
+      <!--initialSize: 初始化连接-->    
+        <property name="initialSize" value="5"/>    
+        <!--maxIdle: 最大空闲连接-->    
+        <property name="maxIdle" value="10"/>    
+        <!--minIdle: 最小空闲连接-->    
+        <property name="minIdle" value="5"/>    
+        <!--maxActive: 最大连接数量-->    
+        <property name="maxActive" value="15"/>    
+   </bean>
+
+	
+	
+	
+	
+   <!-- 配置session工厂 -->
+
+   <bean id="SessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+
+      <property name="dataSource" ref="dataSource" />
+      <property name="configLocation" value="classpath:myBatis-config.xml" />
+       <property name="mapperLocations">
+            <list>
+                <value>classpath:manage/dao/mapper/*.xml</value>
+            </list>
+        </property>
+
+   </bean>
+   
+    
+
+  
+
+   <!-- 配置事务管理器,管理数据源事务处理-->
+
+   <bean id="transActionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+
+      <property name="dataSource" ref="dataSource" />
+      
+
+   </bean>
+   
+   
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">  
+        <property name="messageConverters">  
+            <list>  
+                <ref bean="jsonHttpMessageConverter" />
+            </list>
+        </property>  
+    </bean>
+    <bean id="jsonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">  
+        <property name="supportedMediaTypes">  
+            <list>  
+                <value>application/json;charset=UTF-8</value>  
+            </list>  
+        </property>
+    </bean>
+
+   <!-- 配置事务通知 -->
+
+   <tx:advice id="advice" transaction-manager="transActionManager">
+
+      <tx:attributes>
+
+<!-- 默认只处理运行时异常，可加rollback-for="Exception/Throwable"等处理所有异常或包括错误 -->
+
+         <tx:method name="insert*" propagation="REQUIRED" isolation="DEFAULT" rollback-for="Exception"/>
+
+         <tx:method name="update*" propagation="REQUIRED" isolation="DEFAULT" rollback-for="Exception"/>
+
+         <tx:method name="delete*" propagation="REQUIRED" isolation="DEFAULT" rollback-for="Exception"/>
+
+         <tx:method name="*" propagation="SUPPORTS" isolation="DEFAULT" read-only="true"/>
+
+      </tx:attributes>
+
+   </tx:advice>
+
+   <!-- 配置切面织入的范围,后边要把事务边界定在service层 -->
+
+   <aop:config>
+ 	<aop:pointcut id="services"  
+            expression="execution(* manage.service..*.*(..))" />  
+ 	  <aop:advisor pointcut-ref="services" advice-ref="advice" />  
+   </aop:config>
+
+<!-- 自动扫描组件，要把controller去除，他们是在spring-mvc.xml中配置，如果不去除会影响事务管理。   -->
+  <context:component-scan base-package="manage">
+
+      <context:exclude-filter type="annotation"   expression="org.springframework.stereotype.Controller" />
+
+   </context:component-scan>  
+   
+   <!-- 配置 转换器，对于在basePackage设置的包（包括子包）下的接口类，如果在Mapper.xml文件中定义过，
+
+   将被转换成spring的BEAN，在调用 的地方通过@Autowired方式将可以注入接口实例-->
+
+  
+
+   <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+
+      <property name="sqlSessionFactoryBeanName" value="SessionFactory" />
+
+      <property name="basePackage" value="manage.dao"/>
+
+   </bean>
+   <!-- 配置SessionTemplate，已封装了繁琐的数据操作-->
+
+   <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+      <constructor-arg name="sqlSessionFactory" ref="SessionFactory"/>    
+   </bean>
+  <!-- 用spring默认的提示信息，账号密码验证错误等-->
+	<!-- <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basenames" value="classpath:messages_zh_CN"></property>
+    </bean> -->
+
+     
+
+</beans>

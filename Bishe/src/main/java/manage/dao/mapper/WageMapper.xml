@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="manage.dao.WageMapper" >
+  <resultMap id="BaseResultMap" type="manage.model.Wage" >
+    <id column="account" property="account" jdbcType="VARCHAR" />
+    <result column="username" property="username" jdbcType="VARCHAR" />
+    <result column="departments" property="departments" jdbcType="VARCHAR" />
+    <result column="bsalary" property="bsalary" jdbcType="VARCHAR" />
+    <result column="premium" property="premium" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    account, username, departments, bsalary, premium
+  </sql>
+   <select id="selectAllListPage" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from wage 
+    order by account 
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from wage
+    where account = #{account,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from wage
+    where account = #{account,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="manage.model.Wage" >
+    insert into wage (account, username, departments, 
+      bsalary, premium)
+    values (#{account,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, #{departments,jdbcType=VARCHAR}, 
+      #{bsalary,jdbcType=VARCHAR}, #{premium,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="manage.model.Wage" >
+    insert into wage
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="account != null" >
+        account,
+      </if>
+      <if test="username != null" >
+        username,
+      </if>
+      <if test="departments != null" >
+        departments,
+      </if>
+      <if test="bsalary != null" >
+        bsalary,
+      </if>
+      <if test="premium != null" >
+        premium,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="account != null" >
+        #{account,jdbcType=VARCHAR},
+      </if>
+      <if test="username != null" >
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="departments != null" >
+        #{departments,jdbcType=VARCHAR},
+      </if>
+      <if test="bsalary != null" >
+        #{bsalary,jdbcType=VARCHAR},
+      </if>
+      <if test="premium != null" >
+        #{premium,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="manage.model.Wage" >
+    update wage
+    <set >
+      <if test="username != null" >
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="departments != null" >
+        departments = #{departments,jdbcType=VARCHAR},
+      </if>
+      <if test="bsalary != null" >
+        bsalary = #{bsalary,jdbcType=VARCHAR},
+      </if>
+      <if test="premium != null" >
+        premium = #{premium,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where account = #{account,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="manage.model.Wage" >
+    update wage
+    set username = #{username,jdbcType=VARCHAR},
+      departments = #{departments,jdbcType=VARCHAR},
+      bsalary = #{bsalary,jdbcType=VARCHAR},
+      premium = #{premium,jdbcType=VARCHAR}
+    where account = #{account,jdbcType=VARCHAR}
+  </update>
+</mapper>

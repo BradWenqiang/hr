@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+<!-- 通过别名简化对类的使用
+
+<typeAliases>
+
+      <typeAlias type="cn.itcast.entity.Dept" alias="Dept" />
+
+</typeAliases>
+
+   <mappers>
+
+      <mapper resource="cn/itcast/entity/DeptMapper.xml" />
+
+   </mappers>
+
+      -->
+       <typeAliases>
+        <typeAlias alias="PageInfo" type="manage.util.PageInfo" />
+    </typeAliases>
+    <plugins>
+        <plugin interceptor="manage.util.PagePlugin">
+            <property name="dialect" value="mysql" />
+            <property name="pageSqlId" value=".*ListPage.*" />
+        </plugin>
+    </plugins>
+
+</configuration>
