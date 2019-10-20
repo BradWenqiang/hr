@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Bishe:war">
+    <output-path>$PROJECT_DIR$/Bishe/target</output-path>
+    <root id="archive" name="Bishe.war">
+      <element id="artifact" artifact-name="Bishe:war exploded" />
+    </root>
+  </artifact>
+</component>
