@@ -163,11 +163,11 @@ CREATE TABLE IF NOT EXISTS `user` (
 DELETE FROM `user`;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 INSERT INTO `user` (`account`, `password`, `authority`, `username`, `depNumber`) VALUES
-	('001', '123456', 0, '李大贱人', '1'),
+	('001', '123456', 0, '李大人', '1'),
 	('009', '123123', 0, '144', '1244'),
 	('1141', '123123', 0, '415123', '6'),
 	('1161', '123123', 0, '123', '1244'),
-	('123', '123123', 0, '曲文强', '4'),
+	('123', '123123', 0, '布拉德文强', '4'),
 	('5123', '123123', 0, '123', '007'),
 	('admin', 'admin', 1, 'lijian', '1'),
 	('uiuiuiuiu', 'uiuiu', 0, 'uiuiuiui', '1');
