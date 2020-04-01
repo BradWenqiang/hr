@@ -6,12 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eaefa675-69e2-4005-a6ec-bb09ef09608e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bishe/lib/GEN.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bishe/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Bishe/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud.sql" beforeDir="false" afterPath="$PROJECT_DIR$/crud.sql" afterDir="false" />
-    </list>
+    <list default="true" id="eaefa675-69e2-4005-a6ec-bb09ef09608e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/Bishe/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,8 +38,11 @@
       <file leaf-file-name="crud.sql" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crud.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="778">
-              <caret line="169" column="34" selection-start-line="169" selection-start-column="34" selection-end-line="169" selection-end-column="34" />
+            <state relative-caret-position="314">
+              <caret line="173" column="43" lean-forward="true" selection-start-line="173" selection-start-column="43" selection-end-line="173" selection-end-column="43" />
+              <folding>
+                <element signature="e#6138#6533#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,6 +79,7 @@
       <find>user-service-ref</find>
       <find>authenticate</find>
       <find>GEN</find>
+      <find>李大</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -154,6 +153,11 @@
             </path>
             <path>
               <item name="Human-Resource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Human-Resource" type="462c0819:PsiDirectoryNode" />
+              <item name="Bishe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Human-Resource" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -174,7 +178,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -381,12 +385,12 @@
       <workItem from="1562242457975" duration="5265000" />
       <workItem from="1565615881728" duration="274000" />
       <workItem from="1571454464533" duration="1877000" />
-      <workItem from="1585707788796" duration="273000" />
+      <workItem from="1585707788796" duration="887000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15430000" />
+    <option name="totallyTimeSpent" value="16044000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-512" y="-1440" width="2560" height="1440" extended-state="0" />
@@ -405,19 +409,19 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.23738873" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4851632" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32937685" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3296131" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.462908" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.17857143" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="CheckStyle" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.21290801" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21752988" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21752988" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -441,6 +445,32 @@
         <option value="3" />
         <option value="1" />
       </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
     </option>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -696,8 +726,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crud.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="169" column="34" selection-start-line="169" selection-start-column="34" selection-end-line="169" selection-end-column="34" />
+        <state relative-caret-position="314">
+          <caret line="173" column="43" lean-forward="true" selection-start-line="173" selection-start-column="43" selection-end-line="173" selection-end-column="43" />
+          <folding>
+            <element signature="e#6138#6533#0" />
+          </folding>
         </state>
       </provider>
     </entry>
