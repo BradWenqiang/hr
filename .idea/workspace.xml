@@ -6,7 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eaefa675-69e2-4005-a6ec-bb09ef09608e" name="Default" comment="" />
+    <list default="true" id="eaefa675-69e2-4005-a6ec-bb09ef09608e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Bishe/src/main/resources/git.ingore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bishe/src/main/resources/.gitignore" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/Bishe/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +23,7 @@
       <file leaf-file-name="applicationContext-security.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bishe/src/main/resources/applicationContext-security.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="532">
               <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
             </state>
           </provider>
@@ -29,20 +32,26 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bishe/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
+            <state relative-caret-position="5890">
               <caret line="310" column="14" selection-start-line="310" selection-start-column="14" selection-end-line="310" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="crud.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="crud.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crud.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="173" column="43" lean-forward="true" selection-start-line="173" selection-start-column="43" selection-end-line="173" selection-end-column="43" />
-              <folding>
-                <element signature="e#6138#6533#0" />
-              </folding>
+            <state relative-caret-position="209">
+              <caret line="183" column="31" selection-start-line="183" selection-start-column="31" selection-end-line="183" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="git.ingore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Bishe/src/main/resources/git.ingore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -50,7 +59,7 @@
       <file leaf-file-name="UsernamePasswordAuthenticationFilter.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/4.1.0.RELEASE/spring-security-web-4.1.0.RELEASE.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
+            <state relative-caret-position="608">
               <caret line="44" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
@@ -90,6 +99,8 @@
       <list>
         <option value="$PROJECT_DIR$/Bishe/pom.xml" />
         <option value="$PROJECT_DIR$/crud.sql" />
+        <option value="$PROJECT_DIR$/Bishe/src/main/resources/.gitignore" />
+        <option value="$PROJECT_DIR$/Bishe/src/main/resources/git.ing" />
       </list>
     </option>
   </component>
@@ -143,7 +154,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,14 +168,36 @@
             </path>
             <path>
               <item name="Human-Resource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Human-Resource" type="462c0819:PsiDirectoryNode" />
+              <item name="Bishe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Human-Resource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Human-Resource" type="462c0819:PsiDirectoryNode" />
+              <item name="Bishe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Human-Resource" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Human-Resource" type="462c0819:PsiDirectoryNode" />
+              <item name="Bishe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Human-Resource" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -386,11 +418,12 @@
       <workItem from="1565615881728" duration="274000" />
       <workItem from="1571454464533" duration="1877000" />
       <workItem from="1585707788796" duration="887000" />
+      <workItem from="1585708708133" duration="360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16044000" />
+    <option name="totallyTimeSpent" value="16404000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-512" y="-1440" width="2560" height="1440" extended-state="0" />
@@ -399,39 +432,39 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.3296131" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.15458167" />
-      <window_info anchor="right" id="CDI" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.15430622" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="CDI" order="3" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="JSF" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="JSF" order="3" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4851632" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32937685" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.3296131" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.462908" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.17857143" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.4122024" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="CheckStyle" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.21290801" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21752988" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.21279761" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21969697" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32937685" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,20 +529,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Bishe/src/main/java/manage/service/impl/EmployeeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Bishe/src/main/java/manage/service/impl/TrainServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Bishe/src/main/java/manage/controller/EmployeeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -705,32 +724,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Bishe/src/main/resources/applicationContext-security.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="532">
           <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/4.1.0.RELEASE/spring-security-web-4.1.0.RELEASE.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
+        <state relative-caret-position="608">
           <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Bishe/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
+        <state relative-caret-position="5890">
           <caret line="310" column="14" selection-start-line="310" selection-start-column="14" selection-end-line="310" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crud.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="173" column="43" lean-forward="true" selection-start-line="173" selection-start-column="43" selection-end-line="173" selection-end-column="43" />
-          <folding>
-            <element signature="e#6138#6533#0" />
-          </folding>
+        <state relative-caret-position="209">
+          <caret line="183" column="31" selection-start-line="183" selection-start-column="31" selection-end-line="183" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bishe/src/main/resources/git.ignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bishe/src/main/resources/git.ingore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
