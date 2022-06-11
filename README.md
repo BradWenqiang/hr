@@ -1,4 +1,4 @@
-# HumanResource
+# HR
 搜索：hr,毕业设计，毕设，人力，人力资源，springboot
 
 人力资源管理系统，SSM+BootStrap+Mysql+Spring Security
