@@ -1,5 +1,9 @@
+
 # HR
-搜索：hr,毕业设计，毕设，人力，人力资源，springboot
+## 正在迭代2.0版本，1.0版本请切换分 hr_v1.0
+关键字：hr,毕业设计，毕设，人力，人力资源，springboot
+
+
 
 人力资源管理系统，SSM+BootStrap+Mysql+Spring Security
 分为登录模块，部门模块，员工模块，培训模块，薪资模块，招聘模块。
