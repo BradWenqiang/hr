@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Bishe/Bishe.iml" filepath="$PROJECT_DIR$/Bishe/Bishe.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/Human-Resource.iml" filepath="$PROJECT_DIR$/.idea/Human-Resource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/star-hr.iml" filepath="$PROJECT_DIR$/star-hr.iml" />
     </modules>
   </component>
 </project>
