@@ -9,11 +9,11 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ResponseData {
+public class ApiResponse {
     /**
      * 返回的code
      */
-    private int code;
+    private String code;
 
     /**
      * 错误信息
@@ -24,5 +24,9 @@ public class ResponseData {
      * 返回的数据
      */
     private Object data;
+
+    public static ApiResponse error(String code,String message){
+        return ApiResponse.builder().code(code).message(message).build();
+    }
 
 }
