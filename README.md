@@ -14,5 +14,7 @@
 SQL在系统内
 大二时写的代码，可能不够优雅，欢迎技术探讨，邮箱：919216634@qq.com， WX: qwqqwq121 ，飞书：18745233906
 
+系统预览： https://www.bilibili.com/video/BV1Nu41167cN/?spm_id_from=333.999.0.0&vd_source=e81ba1be7014d7a38b6430dedf1307b8
+
 有想来 ByteDance - [抖音,tiktok,头条,火山] （实习&校招&社招）的小伙伴我可以帮忙内推，包括但不限于 Java，Go，前端，产品，运营
 职位预览：https://job.toutiao.com/s/F1sSoKE
