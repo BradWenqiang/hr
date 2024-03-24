@@ -1,19 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d326ce19-e7f4-4adb-9fe3-992bb6834193" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/auth/AuthQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/auth/req/AuthMenuQueryRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/auth/resp/AuthMenuQueryResp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/login/resp/LoginResp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/domain/auth_menu_agg/AuthMenuAgg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/domain/auth_menu_agg/entity/AuthMenuEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/Index.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/page/index/blog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/page/index/headlogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/index/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/login/LoginQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/login/LoginQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/auth/AuthQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/auth/req/AuthMenuQueryRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/auth/resp/AuthMenuQueryResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/base/Tess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/login/LoginQuery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/login/req/LoginRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/login/resp/LoginResp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/domain/auth_menu_agg/AuthMenuAgg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/domain/auth_menu_agg/entity/AuthMenuEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/wenqiang/brad/starhr/StarHrApplicationTests.java" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,6 +170,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -224,6 +241,9 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
@@ -240,10 +260,15 @@
       <select />
     </treeState>
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectId" id="2e8cwLPA8hWmUXAxvaG4grt92qe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -410,44 +435,56 @@
       <pane id="Scope" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/i18n" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "Spring Boot.StarHrApplication.executor": "Debug",
+    "git-widget-placeholder": "demo__app",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/yolo.l/Documents/code/hr/src/main/resources/static/page/index",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JSP"
+    ]
+  }
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/page/index" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/index" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap/js" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap/css" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/page/index" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/index" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap/js" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.wenqiang.brad.starhr.application.auth.resp" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/i18n" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/controller" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="StarHrApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -458,6 +495,14 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-995e55e7" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -472,6 +517,8 @@
       <workItem from="1654946927714" duration="2234000" />
       <workItem from="1655556280018" duration="11886000" />
       <workItem from="1655610537130" duration="6496000" />
+      <workItem from="1711289963045" duration="29000" />
+      <workItem from="1711290000090" duration="9890000" />
     </task>
     <servers />
   </component>
@@ -517,7 +564,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="RECENT_FILTERS">
@@ -541,31 +588,26 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/login/LoginQuery.java</url>
           <line>21</line>
-          <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/infra/conf/ExceptionHandlerConfig.java</url>
           <line>26</line>
-          <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/infra/conf/ExceptionHandlerConfig.java</url>
           <line>36</line>
-          <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/infra/conf/ExceptionHandlerConfig.java</url>
           <line>48</line>
-          <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/infra/conf/ResponseBodyConfig.java</url>
           <line>32</line>
-          <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
