@@ -11,12 +11,12 @@ import javax.servlet.http.HttpServletRequest;
  * @author pan_junbiao
  **/
 @Controller
-public class Index
+public class Zixun
 {
     /**
      * 首页
      */
-    @RequestMapping("/index")
+    @RequestMapping("/zixun")
     public String index(HttpServletRequest request)
     {
         //将用户信息保存到Request对象中
@@ -25,6 +25,21 @@ public class Index
         request.setAttribute("remark","您好，欢迎访问 pan_junbiao的博客");
 
         //返回首页
-        return "page/index";
+        return "page/zixun";
+    }
+
+    /**
+     * 首页
+     */
+    @RequestMapping("/zixunDetail")
+    public String zixunDetail(HttpServletRequest request)
+    {
+        //将用户信息保存到Request对象中
+        request.setAttribute("name","pan_junbiao的博客");
+        request.setAttribute("blog","https://blog.csdn.net/pan_junbiao");
+        request.setAttribute("remark","您好，欢迎访问 pan_junbiao的博客");
+
+        //返回首页
+        return "page/zixun/zixun_detail";
     }
 }

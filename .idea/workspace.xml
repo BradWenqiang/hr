@@ -5,30 +5,242 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d326ce19-e7f4-4adb-9fe3-992bb6834193" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/Index.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/page/index/blog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/page/index/headlogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/index/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/Lives.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/People.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/Zixun.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/baike/coin/2551c67c21fad493d0a340639a9cff63.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/baike/coin/64bdcf3e79ea8703174d40e8914b1871.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/baike/coin/910318dac497b2eec8709caead36343c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/baike/coin/9577fbe91ea7758819777320ad4619ad.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/baike/coin/a878c63e9dc4bd3e960c294a1a044712.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/baike/coin/fcffffe325a78049465ab9035b5ce4f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/baike/qukuai/15c54146e6eaa71b7bd63eedecab214c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/baike/qukuai/163250c40dba7657973c50c7f9e8949.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/baike/qukuai/3a1a3a5b362f57d9079f1379b5fdcec3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/coin/53d1040e47c4311924b4942128637528.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/defi/4addf4c359f643c8c55185287b3e38c8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/defi/59f86a45307dd991e3cfd579f8366fdb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/defi/6abfa02cde6cc15c3fa7ab6cfb19a669.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/defi/999329af6492a369689ad2be606f676f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/defi/b005cb7a3ae2e0ecedcc95ba4dc8b882.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/defi/e667f7bb99839cbb54847056d6f8d029.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/defi/e7cd795f83e9bfbc18dde545cacc9f63.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/defi/f9ab5d4bb78e406c3b519021bed8786.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/exchange/133a3a472768e6f644def5ad5a12db67.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/exchange/72ead34d45fec07e6b885a5db7f1afe0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/exchange/8828c826f32bb2b271b547c7621cf602.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/exchange/8d2a1a06346a0f1c4728e999da291937.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/exchange/a0f39189484f6029e3fef8e596dfe385.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/exchange/be0c9a1736f1717d0e1a78ecaac0370a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/exchange/bfc01a84c90b58b2867ca1092ca6b309.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/exchange/d053813a8112a88509f41deb4d2c934d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/exchange/d7a785709ba9d1165f6b42dc74312172.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/exchange/eb08f10fe16dd4e05960e223d3c41883.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/exchange/fa0fc47e6f4ed18f77d20eeb1164c8b6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/exchange/fd03be532185072c31780a911ddee683.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/nft/1120149537bb756122ec3496840f03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/nft/32af88f0589a60213383cb6d0a663587.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/nft/6bdf57120f61bbf5609b60b27f73f881.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/nft/84689d7b3ff408ffd8eb09b7f3f61701.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/nft/9cd9e636ff232bd0d2f528b1a300a67f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/nft/ae49bdf0fc3b8a1f2284f9496c44c777.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/nft/bb474f1ba97e65e40877311c9c5d2fcc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/nft/bdde92514a08aa4ed702b3e395cd6757.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/nft/fc375e7afa3afe445cae8c785a44c329.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/nft/ffaf5ae7438ec014d8bd88309c55ffb4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/0133650e48d90204a4dad06809452fd8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/0578fa1cbc14b9c490428eca5075b4ef.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/0d1be12b7a0040a9eb88940b2a3c1a4d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/0e3e239cc4b1700f6298cedac9edf8b2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/0f4ab7f53084de588dba7aaa7ff75cd1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/0fe46286c32221e8cdd4bdaf6c7ceac3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/1a068eedec6a01ad9e733055ab25d007.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/1b6fb3b82690731c2e0409a12cf6d23c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/23912b5f39bcc10863c73577744748a0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/30124e6fcbf1175d5510f0cfb2269666.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/3148d07eedea05a88ba795c18ac04a7b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/325afbcbc036f2c0e07e61e4b7b89137.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/36cffc24516d40ddcede562ef9bc0d48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/400a8d7146da10b5152387295c4930ca.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/496cf62f1b4cc72e23565779abf38ec5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/50b6ca5dd15c417bc69bcb5b80ff5bce.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/53643cbcb7f6348069962ac7cd7e73f5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/54b7b4dfd6c02ae413574bbdcb50b770.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/54c983db0d12a3d1fd55d35205cc5fb8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/60f7aa3da9dbabcc178c2e6dcb25246b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/647dc3044e4d9a987af01c581f8553b2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/6a280f6b1ab032b336dbb3b2bc0f8f65.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/709e5d8ff4c7ea38a0df51d6da4841ed.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/72027933032d3ce3dd9635782b0befb7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/7a784fdf4580b2c6d297c6892bde7f1a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/7de2ec97e05855dd81ee6c6c1f5836d6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/80f5720a874925a307001900bb2267b8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/8179aa9ff8243896e2692caa86447f2f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/833167e3ec794065d8ca568de9d54f2a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/8668bbf43098f92defb85e8e3e4840c7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/86d01787561f10f7a5334b13c760eccb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/8b20c71ddbff749d347b82568f005018.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/8db9be4fdb61d1a990283fe56fbbf363.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/963ef6f4c69f201f8ecb6a22808ad9d8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/969b83f5e05dc7d7d9fa3273c5cfb47e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/97afc26dd8614e29a737d19d5ad8a1f6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/980e48f72148a3a7e705f0bddbcd9eb2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/9862cc88a3f26cccf358ca737e4addb6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/a2b8b0db95149c89b6f9940fdfe085b4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/a2ccc41a2bca7a474e7c7326062faea6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/a4d6e10e93be2adc7e717271b65c21c4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/a8fc52411592f5cc812044f13e60b5e9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/b966dc9e0df906fbc56d68a62cb76209.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/be527722da0c2b30f32018977adb0682.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/bfe2834fe556ebbb2dc0f954c7670f08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/c035ddbfec60ad8d04a036e68254b13b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/c6671e89aa55eaa48d31a8ca43112852.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/c6e3dce301830ebdc66a9cae3e2a0a63.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/dea730c7403e50e92ecae8aa7dcfbbae.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/df37a671473d364471b672a8caddbe5d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/e9d18ecb6dc9e9018c1b2873b03d6d54.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/f49c56550e344f11921009bf73acb036.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/people/fc1c3197f2867539aad258fa37718858.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/12ea23ec99eb123b2d919664e49f22d2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/16aa8946e61ce3980663dfa3e7958ae3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/1e19307c573620a638ec39bf7972918d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/24c16f3469aa6dd632ccc14a65eec15a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/27a058aafb43c382e9d2e8c4869a88bd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/2cc283e5bbb1f65b172faeb076489456.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/3910cce493e448e4e9198f040f9826c1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/481c648cef89f37e9599b7f9f567607d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/64b8c805f375046484ad9619752e7a49.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/6fd35e31627a8dba8ba076e2b6c6fc87.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/71701a0788da219ba87e6113aae2a687.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/76b06ff70f1656f3bb0dd9c426728ff3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/8893aae37e3638dd6459ba5c59a2035c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/8ce76b6cad2c4a4fbd5aef184cb49bc7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/8d732a6d1666caa987d261bc26ae1294.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/8eb9851aa5ca15dcc6fdcc8d95fe7638.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/90704489bc1a2e2b3c53cc288e6771de.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/a0ed7d4c87ffdfed0325ea80110541eb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/acc698c497f0073182fed62743c39edd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/affa09c287ddae584956af6e4e1b3183.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/ba0c536d6d812aa3d7e2bc9cb768c737.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/bb3e0ab9da5a2b443f2a44da468b4380.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/bc77edac5dfa046483d36240387128d0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/ca582823887c21643adfb3df7d01226d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/e418488df92c51ec99c6ebce55ab190b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/pingtai/fba95b8ca1594bfd7033121166de96b7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/qianbao/63b73718424023273fba3fb354067b16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/qianbao/687eef9225e6724cd6660ab345ff033a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/qianbao/8dfc26b76120131e1c0f812dd51e7c18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/qianbao/b57038ccf4b05f2ae77ab0c6286cb26d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/qianbao/c3df25c0c9b19c1ef8c0677ab7e8c127.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/qianbao/df0391f70dac571d3c1682fae7a9a250.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/star/1196d9d2369a0f6f1c9427992c945c37.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/star/26d102da4e720f7c469a63d25db7de51.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/star/274a25846da3b48d7c729bcb002aa36e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/star/544dc967b63a99be78973507a697ac11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/star/64a3e054cdfb8311ab848c3772717764.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/star/8c2d5cd09f220f348c73466c206f0482.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/star/92e4bb19b03838d55afed73d42dfcb30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/star/bd171063d5a5deb6db91a222abf992dc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/star/d619df269e3a1173471b9b414e1faeba.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zcfg/2f76461a1064628f3fbc1f70725eb924.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zcfg/47e927a901614b54b5e51acef9543783.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zcfg/62ad9b25be6239f4fbf801a4599e428.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zcfg/6427a7fb29f387340465e28574dddef4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zcfg/73a2665a1c55605d97af7d154c016642.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zcfg/775f0f4d47179601eb058b2f8dcd5dd5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zcfg/846862860c95fd76a6da3b80dc1b0db.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zcfg/8ea672a4f814055383fb9263f3224659.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zcfg/92ffd8366705d7750186c10ae62b77aa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zcfg/a36bbe9f36c6d52d37e0fb5d720993dd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zcfg/afb2cc08b628c0a4ca917a845d0ace30.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zcfg/ca8178d73cecd45d2b65d9e02acb09e6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zcfg/cdded1f6a571b90946b5229c852a5c8a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zcfg/ce4cfdcc885eef1c10c2be89d3f8a747.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zcfg/d42119280d408ab9582b8fb2c442678c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zcfg/de8387f6535d28bacb55609791ec0b11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zcfg/e626b9c5617336b2cd98083544ee52c2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zcfg/fd0782cd19b75be8f936121db1330b47.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/btc/502413f30f1a3d2537233fc268bb7e0d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/btc/79689ec5b2965489c0fb5c6f25730fa5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/btc/87ca252664f153fd198b8ccd9d292477.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/btc/b5ae95f4b8cd8c95c56a0ed0c84c92cf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/btc/f07c3271fdb3109b5860cc4d9367a5a8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/jzb/1bdd7d9821476b82a046fbbcc2afe252.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/jzb/5fd846bcb6dd1f9b48cfc1d608039d46.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/jzb/6bf66a2a3d27c30c9b356d88ede69769.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/jzb/8301b6b6d01aa7df2d637d6cba45dab3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/jzb/86773a508e213731d08623ddf3f0d631.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/jzb/927532853dfd80b8325b68220ae9b8a2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/jzb/9acd139bb692ed4bb83b5595b2a827e2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/jzb/9d8392744fde213205df5667a819037a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/jzb/c5e14968d85f503534ea29e599266b1a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/jzb/c94c930c2de54f80b6312bb2ca3684.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/jzb/e1840fc1b7771ac5667077b5dee2f125.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/jzb/ebecc0b53ab2023cc5856ee09e7c0bcf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/jzb/f768a097a802475f47b35d40ac1a19e3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/qukuai/6dac9d9b87bd797a1968efd7fe27d46b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/qukuai/bb707e5dc4f219dbf46c78591789fdbf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/wk/0b5049d70e7409eba9132cfd0ca5bca8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/wk/2e28e5cea4c57a2670491bcda881978d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/wk/4382a3e1e547e8380ddd041ff831a042.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/wk/78241b98444c8211222f7c389f40a831.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/wk/c9d09b10e1f8b843f69082d23e6f7030.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zixun/wk/fa36fe85138cbf9531ffb86fdd76940c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zxgg/16fb6a5ad216d093a57284b68a8c2e52.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/file/zxgg/6219d8b0078752ff302bf2878edd38c0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/css/DIN-Medium.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/css/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/css/iconfont.css.orig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/css/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/css/iconfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/css/style.css_v=20230828.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/css/style.css_v=20230828orig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/css/swiper.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/arr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/circle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/copyurl.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/icon_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/icon_04-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/icon_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/icon_10-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/icon_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/icon_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/icon_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/icon_14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/icon_15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/icon_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/img_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/m_share.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/qq.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/weibo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/images/weixin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/js/echarts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/js/g/20221212.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/js/jquery-1.8.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/js/m-share.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/staticv4/js/swiper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/lives.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/people.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/people/people_detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/zcfg.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/zixun.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/zixun/zixun_detail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/auth/AuthQuery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/auth/req/AuthMenuQueryRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/auth/resp/AuthMenuQueryResp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/base/Tess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/login/LoginQuery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/login/req/LoginRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/login/resp/LoginResp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/domain/auth_menu_agg/AuthMenuAgg.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/domain/auth_menu_agg/entity/AuthMenuEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/wenqiang/brad/starhr/StarHrApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/Index.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/page/index/blog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/page/index/headlogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/headlogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/index/index.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -439,50 +651,52 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "Spring Boot.StarHrApplication.executor": "Debug",
-    "git-widget-placeholder": "demo__app",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/yolo.l/Documents/code/hr/src/main/resources/static/page/index",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.StarHrApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;demo__app&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yolo.l/Documents/code/hr/src/main/webapp/WEB-INF/page/people&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JSP"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JSP&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/people" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/zixun" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/page" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/page/index" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/index" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap/js" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap/css" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/page" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/page/index" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/page/index" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/bootstrap/js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wenqiang.brad.starhr.application.base" />
+      <recent name="com.wenqiang.brad.starhr.application" />
       <recent name="com.wenqiang.brad.starhr.application.auth.resp" />
     </key>
   </component>
@@ -518,7 +732,10 @@
       <workItem from="1655556280018" duration="11886000" />
       <workItem from="1655610537130" duration="6496000" />
       <workItem from="1711289963045" duration="29000" />
-      <workItem from="1711290000090" duration="9890000" />
+      <workItem from="1711290000090" duration="10093000" />
+      <workItem from="1711552433287" duration="1055000" />
+      <workItem from="1711733878192" duration="5492000" />
+      <workItem from="1713800431275" duration="836000" />
     </task>
     <servers />
   </component>
@@ -609,6 +826,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/infra/conf/ResponseBodyConfig.java</url>
           <line>32</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wenqiang/brad/starhr/application/Zixun.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

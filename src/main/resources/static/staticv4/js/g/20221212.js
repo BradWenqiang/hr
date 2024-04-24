@@ -1,0 +1,14 @@
+var html = "";
+html+="<div class=\"tx-info-module-box tx-info-module-down-box tx-info-module-down1-box\">";
+html+="<section>";
+html+="<div class=\"tx-info-module-imgbox\">";
+html+="<img alt=\"欧易OKX\" src=\"file/pingtai/71701a0788da219ba87e6113aae2a687.jpg\"></div>";
+html+="<div class=\"tx-info-module-down-txt\">";
+html+="<h4 class=\"tx-info-module-txt-title\">";
+html+="欧易OKX</h4>";
+html+="<p class=\"tx-info-module-txt-info\">";
+html+="全球顶尖交易所，注册即领最高￥3000数字盲盒！</p>";
+html+="</div>";
+html+="<a class=\"tx-info-module-btn\" href=\"../e/public/ClickAd?adid=119\" rel=\"nofollow\" target=\"_blank\" title=\"官网注册\">官网注册</a>&nbsp;&nbsp;<a class=\"tx-info-module-btn1\" href=\"../e/public/ClickAd?adid=120\" rel=\"nofollow\" style=\"background-color:#242b33\" target=\"_blank\" title=\"APP下载\">APP下载</a></section>";
+html+="</div>";
+document.write(html);
